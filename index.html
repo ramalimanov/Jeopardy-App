@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Jeopardy Game</title>
+
+    <!-- Link to the CSS file -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Game container -->
+    <div id="game-container">
+      <!-- Header section -->
+      <header>
+        <h1>JEOPARDY</h1>
+
+        <!-- Control buttons and score display -->
+        <div id="controls">
+          <button id="play">Start Game</button>
+          <button id="reset" disabled>Reset Game</button>
+          <div id="score-container">Score: <span id="score">0</span></div>
+        </div>
+      </header>
+
+      <!-- Jeopardy game board -->
+      <table id="jeopardy-table">
+        <thead>
+          <tr id="categories"></tr>
+          <!-- Category names go here -->
+        </thead>
+        <tbody id="clues"></tbody>
+        <!-- Clues (questions) go here -->
+      </table>
+
+      <!-- Question/answer display -->
+      <div id="active-clue" tabindex="0">Click on a clue to begin!</div>
+    </div>
+
+    <!-- jQuery Library -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Link to JS file -->
+    <script src="joepardy.js"></script>
+  </body>
+</html>
